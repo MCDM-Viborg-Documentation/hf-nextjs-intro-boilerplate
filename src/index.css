@@ -1,0 +1,89 @@
+:root {
+
+    /* Global Variables */
+    --background-color: #f1f1f1;
+    --font-color : #000;
+    --link-color : 000;
+    --link-hover-color : red;
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        
+        /* Global Variables */
+        --background-color: #111;
+        --font-color : #fff;
+        --link-color : #fff;
+        --link-hover-color : moccasin;
+    }
+
+}
+
+body {
+    padding : 20px;
+    margin: 0 0;
+    background-color: var(--background-color);
+    color : var(--font-color);
+    font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color : var(--font-color);
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+img {
+
+    background-color: #fff;
+    padding : 5px;
+    border-radius: 10px;
+    
+
+}
+ul, ol {
+    color : var(--font-color);
+    margin : 0;
+    padding : 10px 0 20px 15px;
+    max-width: 1024px;
+    width: 100%;
+}
+
+li {
+    padding-left: 5px;
+}
+
+video {
+    margin: 20px 0 0 0;
+    border: solid 1px #fff;
+    max-width: 1024px;
+    width: 100%;
+}
+
+a{
+
+
+    color : var(--link-color);
+    
+}
+
+a:hover{
+
+
+    color : var(--link-hover-color);
+    
+}
+    
+
+@media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+}
