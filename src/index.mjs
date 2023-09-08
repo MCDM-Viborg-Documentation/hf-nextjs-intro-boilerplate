@@ -1,12 +1,8 @@
 const application = {
     
-    applicationRoot : 'hf-nextjs-intro-boilerplate',
-    documentationPath : 'https://github.com/MCDM-Viborg-Documentation/hf-nextjs-intro-boilerplate',
-    gitHubPageIODomain : 'mcdm-viborg-documentation.github.io',
     data : {
-
-        title : 'NextJS - MCDM Viborg',
-        description : `NextJS vidoer til MCDM Viborg : <a href="${application.documentationPath}#readme" target="_blank">https://github.com/MCDM-Viborg-Documentation/hf-nextjs-intro-boilerplate</a>`,
+        title : 'NextJS - BoilerPlate Domkoumentation',
+        description : '...',
         videos : [
             {
                 chapter : "chapter-1",
