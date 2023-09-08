@@ -1,8 +1,10 @@
 const application = {
-
+    applicationRoot : 'hf-nextjs-intro-boilerplate',
+    documentationPath : 'https://github.com/MCDM-Viborg-Documentation/hf-nextjs-intro-boilerplate',
+    sitPath : 'https://mcdm-viborg-documentation.github.io/hf-nextjs-intro-boilerplate/',
     data : {
         title : 'NextJS - MCDM Viborg',
-        description : `NextJS vidoer til MCDM Viborg : <a href="https://github.com/MCDM-Viborg/NextJS#readme" target="_blank">https://github.com/MCDM-Viborg/NextJS</a>`,
+        description : `NextJS vidoer til MCDM Viborg : <a href="${application.documentationPath}#readme" target="_blank">https://github.com/MCDM-Viborg-Documentation/hf-nextjs-intro-boilerplate</a>`,
         videos : [
             {
                 chapter : "chapter-1",
@@ -58,7 +60,7 @@ const application = {
 
     bodyTmpl : (location) => {
 
-        let path = (location.host === 'mcdm-viborg.github.io') ? location.origin + '/NextJS/' : '/';
+        let path = (location.host === 'mcdm-viborg.github.io') ? location.origin + '/' + application.applicationRoot + '/' : '/';
 
         return `<div>
             <h1><img src="./assets/square_logo.png" width="50px">${application.data.title}</h1>
