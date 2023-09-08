@@ -1,8 +1,10 @@
 const application = {
+    
     applicationRoot : 'hf-nextjs-intro-boilerplate',
     documentationPath : 'https://github.com/MCDM-Viborg-Documentation/hf-nextjs-intro-boilerplate',
     gitHubPageIODomain : 'mcdm-viborg-documentation.github.io',
     data : {
+
         title : 'NextJS - MCDM Viborg',
         description : `NextJS vidoer til MCDM Viborg : <a href="${application.documentationPath}#readme" target="_blank">https://github.com/MCDM-Viborg-Documentation/hf-nextjs-intro-boilerplate</a>`,
         videos : [
@@ -60,7 +62,10 @@ const application = {
 
     bodyTmpl : (location) => {
 
-        let path = (location.host === application.gitHubPageIODomain) ? location.origin + '/' + application.applicationRoot + '/' : '/';
+        let applicationRoot =  'hf-nextjs-intro-boilerplate';
+        let gitHubPageIODomain = 'mcdm-viborg-documentation.github.io';
+
+        let path = (location.host === gitHubPageIODomain) ? location.origin + '/' + applicationRoot + '/' : '/';
 
         return `<div>
             <h1><img src="./assets/square_logo.png" width="50px">${application.data.title}</h1>
