@@ -226,3 +226,24 @@ Ovenstående referencer beskriver flere af de "regler" for filer og struktur som
 [Projektet på GitHub så vi kan holde det opdateret og hente den når vi skal starte et nyt projekt.](https://mcdm-viborg.github.io/NextJS/?chapter=chapter-7).
 
 ...todo
+
+# 2.6 Start med Bolietplate fra ZIP fil.
+
+Den nemmeste og mest gnidningsfrie måde at "genbruge" jeres boilerplate er at hente den som zip fil på github.
+
+Pak kildefilerne ud i din nye projekt mappe og omdøb projekt titlen i `package.json`.
+
+Herefter husk at initialisere git.
+
+```
+git init
+```
+
+og herfter installere vores afhængigheder:
+
+```
+npm install
+```
+
+Så er vi klar til at udvikle så det sprøjter fra vores hænder.
+
